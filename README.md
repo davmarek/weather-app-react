@@ -1,30 +1,33 @@
-# 🚀 Running the project 
+# Weather App
+
+A weather forecast app built with React. Users can search for any city, view hourly temperature and rain data for the coming days, and save favourite cities for quick access. Weather data is pulled from the free [Open-Meteo API](https://open-meteo.com/) — no API key required.
+
+**Live demo:** https://davmarek-weather.vercel.app
+
+**Stack:** React, TypeScript, Vite, TailwindCSS, TanStack Query
+
+![App screenshot](./img/demo.jpeg)
+
+---
+
+## Running the project
 
 **Install packages**
 ```bash
-yarn
-# or
-npm install
+bun install
 ```
-
-<br>
 
 **Run the project**
 ```bash
-yarn dev
-# or
-npm run dev
+bun dev
 ```
-<br>
 
-Website should be running at http://localhost:5173
+App runs at http://localhost:5173
 
-# 🕸️ Project structure
-All source code is located in `src/`:
-- the app lifecycle starts in `src/main.tsx`
-- whole app _component_ is defined in `src/App.tsx`
-- all subcomponents are located in `src/components/`
-- helper functions and TypeScript types are in `src/helpers/`
+## Project structure
 
-# Other info
-Project uses _Vite_ with **_React_**. Entire app is styped with **_TailwindCSS_**. Fetching is done through **_React Query_** for easier async state management, caching and debugging.
+All source code is in `src/`:
+- `src/main.tsx` — app entry point
+- `src/App.tsx` — root component
+- `src/components/` — UI components (city search, weather detail, favourites)
+- `src/helpers/` — data fetching helpers and TypeScript types
